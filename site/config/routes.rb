@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get "/generatepdf" => "application#generate_pdf"
+  get "/download_pdf" => "clients#download_pdf"
+  # get "/generatepdf" => "application#generatepdf"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
