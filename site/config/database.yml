@@ -1,15 +1,15 @@
-mysql:
- hostname: localhost
- port: 3306
- socket: /tmp/mysql.sock
- username: user
- password: password
- database: mysql-db
-
-destination:
- postgres:
-  hostname: localhost
+development:
+  adapter: postgresql
+  host: localhost
   port: 5432
-  username: user
-  password: password
-  database: pg-db
+  username: daveoleson
+  password: 
+  database: myapp_development
+ 
+test:
+  adapter: postgresql
+  host: localhost
+  port: 5432
+  username: daveoleson
+  password: 
+  database: myapp_test
