@@ -10,7 +10,7 @@ if (system.args.length < 3 || system.args.length > 5) {
     phantom.exit(1);
 } else {
     address = system.args[1];
-    output = "download.pdf"
+    output = system.args[2];
     page.viewportSize = { width: 2000, height: 2000 };
     if (system.args.length > 3 && system.args[2].substr(-4) === ".pdf") {
         size = system.args[3].split('*');
