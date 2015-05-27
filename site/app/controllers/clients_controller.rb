@@ -18,7 +18,7 @@ class ClientsController < ApplicationController
     url = refer.split("?")
     url_scrape = url[1] + '#' + url[2] 
 # puts url_scrape
-    system("phantomjs rasterize.js '#{url_scrape}' tmp/download.pdf '1200px*1800px'")              
+    system("phantomjs rasterize.js '#{url_scrape}' tmp/download.pdf '2000px*2000px'")              
     # pdf = `phantomjs rasterize.js '#{url_scrape}' download.pdf '1100px*1000px'`
     # return pdf
   end
