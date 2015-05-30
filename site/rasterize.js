@@ -33,7 +33,7 @@ if (system.args.length < 3 || system.args.length > 5) {
     }
     if (system.args.length > 4) {
         page.zoomFactor = system.args[4];
-    }
+    }        
     page.open(address, function (status) {
         if (status !== 'success') {
             console.log('Unable to load the address!');
@@ -46,7 +46,11 @@ if (system.args.length < 3 || system.args.length > 5) {
             window.setTimeout(function () {
                 page.render(output);
                 phantom.exit();
+<<<<<<< HEAD
             }, 1000);
+=======
+            }, 15000);
+>>>>>>> parent of 55da5a3... reverted to old branch
         }
     });
 }
